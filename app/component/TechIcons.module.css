@@ -1,0 +1,31 @@
+.icon {
+  width: 44px;
+  height: 44px;
+  color: var(--ink);
+  overflow: visible;
+}
+
+.draw {
+  stroke-dasharray: 220;
+  stroke-dashoffset: 220;
+  animation: drawPath 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-play-state: paused;
+}
+
+/* Runs once the icon's reveal wrapper is visible (see [data-reveal].is-visible below) */
+:global([data-reveal].is-visible) .draw {
+  animation-play-state: running;
+}
+
+@keyframes drawPath {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .draw {
+    animation: none !important;
+    stroke-dashoffset: 0;
+  }
+}
