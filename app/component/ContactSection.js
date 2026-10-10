@@ -51,18 +51,34 @@ export function ContactForm() {
 
   function handleSubmit(event) {
     event.preventDefault();
+
     const form = new FormData(event.currentTarget);
+
     const name = form.get("name");
     const email = form.get("email");
     const organization = form.get("organization") || "Not provided";
     const service = form.get("service") || "Not sure yet";
     const message = form.get("message");
-    const subject = encodeURIComponent(`Project enquiry from ${name}`);
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\nOrganisation: ${organization}\nInterested in: ${service}\n\nProject details:\n${message}`,
-    );
 
-    window.location.href = `mailto:hello@careform.studio?subject=${subject}&body=${body}`;
+    const subject = `Project enquiry from ${name}`;
+
+    const body = [
+      `Name: ${name}`,
+      `Email: ${email}`,
+      `Organisation: ${organization}`,
+      `Interested in: ${service}`,
+      "",
+      "Project details:",
+      message,
+    ].join("\n");
+
+    const mailtoUrl =
+      `mailto:hello@careformstudio.com` +
+      `?subject=${encodeURIComponent(subject)}` +
+      `&body=${encodeURIComponent(body)}`;
+
+    window.location.assign(mailtoUrl);
+
     setPrepared(true);
   }
 
@@ -135,7 +151,8 @@ export function ContactForm() {
         <p className={sectionStyles.status} role="status">
           Your email app should open with your note ready. Review it and press
           Send. If it didn’t open, email us at{" "}
-          <a href="mailto:hello@careform.studio">hello@careform.studio</a>.
+          <a href="mailto:hello@careformstudio.com">hello@careformstudio.com</a>
+          .
         </p>
       )}
       <p className={sectionStyles.privacy}>

@@ -9,7 +9,7 @@ const structuredData = {
   "@type": "Organization",
   name: "Careform",
   url: siteUrl,
-  email: "hello@careform.studio",
+  email: "hello@careformstudio.com",
   description:
     "Healthcare websites, patient experiences and custom software designed around the people who use them.",
   knowsAbout: [

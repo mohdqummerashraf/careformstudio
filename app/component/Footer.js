@@ -17,8 +17,8 @@ export default function Footer() {
         <Link href="/about">About</Link>
         <Link href="/contact-us">Contact</Link>
       </nav>
-      <a className={s.email} href="mailto:hello@careform.studio">
-        hello@careform.studio <span aria-hidden="true">↗</span>
+      <a className={s.email} href="mailto:hello@careformstudio.com">
+        hello@careformstudio.com <span aria-hidden="true">↗</span>
       </a>
       <span className={s.copyright}>© 2026 Careform studio</span>
     </footer>

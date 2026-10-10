@@ -87,7 +87,7 @@ export default function WorkPage() {
         <p>
           Tell us about the people you serve and what you’d like to make easier.
         </p>
-        <a href="mailto:hello@careform.studio" className={s.buttonLight}>
+        <a href="mailto:hello@careformstudio.com" className={s.buttonLight}>
           Start a conversation ↗
         </a>
       </section>

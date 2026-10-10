@@ -30,7 +30,7 @@ export default function ProjectPage({ params }) {
           <Link href="/work">All work</Link>
           <Link href="/#about">About us</Link>
         </nav>
-        <a className={s.headerCta} href="mailto:hello@careform.studio">
+        <a className={s.headerCta} href="mailto:hello@careformstudio.com">
           Let’s talk ↗
         </a>
       </header>
@@ -46,7 +46,7 @@ export default function ProjectPage({ params }) {
           </div>
           <h1>{project.name}</h1>
           <p>{project.summary}</p>
-          <a className={s.button} href="mailto:hello@careform.studio">
+          <a className={s.button} href="mailto:hello@careformstudio.com">
             Discuss a similar project ↗
           </a>
         </div>
@@ -129,7 +129,7 @@ export default function ProjectPage({ params }) {
           We’ll listen to the challenge, explore the right scope and make a
           practical plan with you.
         </p>
-        <a className={s.buttonLight} href="mailto:hello@careform.studio">
+        <a className={s.buttonLight} href="mailto:hello@careformstudio.com">
           Start a conversation ↗
         </a>
       </section>

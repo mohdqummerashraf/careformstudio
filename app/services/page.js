@@ -90,7 +90,7 @@ export default function ServicesPage() {
           Tell us what you’re trying to make easier. We’ll help you work out
           where to start.
         </p>
-        <a href="mailto:hello@careform.studio" className={s.buttonLight}>
+        <a href="mailto:hello@careformstudio.com" className={s.buttonLight}>
           Start a conversation ↗
         </a>
       </section>

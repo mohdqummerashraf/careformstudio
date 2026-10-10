@@ -37,7 +37,7 @@ export default function ServiceDetail({ params }) {
           <p>{service.intro}</p>
           <a
             className={s.button}
-            href={`mailto:hello@careform.studio?subject=${encodeURIComponent(`Let’s talk about ${service.title.toLowerCase()}`)}`}
+            href={`mailto:hello@careformstudio.com?subject=${encodeURIComponent(`Let’s talk about ${service.title.toLowerCase()}`)}`}
           >
             Talk about your project <Arrow />
           </a>
@@ -173,7 +173,7 @@ export default function ServiceDetail({ params }) {
           Tell us a little about your team and what you want to improve. We’ll
           take it from there.
         </p>
-        <a href="mailto:hello@careform.studio" className={s.buttonLight}>
+        <a href="mailto:hello@careformstudio.com" className={s.buttonLight}>
           Start a conversation <Arrow />
         </a>
       </section>

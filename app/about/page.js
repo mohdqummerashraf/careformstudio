@@ -11,7 +11,7 @@ export default function AboutPage() {
     <main className={s.page}>
       <section className={s.hero}>
         <div className={s.eyebrow}>
-          <span /> A SMALL studio FOR A BIG HUMAN NEED
+          <span /> A SMALL STUDIO FOR A BIG HUMAN NEED
         </div>
         <h1>
           Healthcare has

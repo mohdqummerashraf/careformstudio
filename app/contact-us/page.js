@@ -34,7 +34,9 @@ export default function ContactPage() {
           </div>
           <div className={s.direct}>
             <span>Prefer email?</span>
-            <a href="mailto:hello@careform.studio">hello@careform.studio ↗</a>
+            <a href="mailto:hello@careformstudio.com">
+              hello@careformstudio.com ↗
+            </a>
           </div>
         </div>
         <div className={s.heroArt}>
